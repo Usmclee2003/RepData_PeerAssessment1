@@ -1,3 +1,8 @@
+Reproducible Research
+================
+Lee Pena
+October 15, 2017
+
 R Markdown
 ----------
 
@@ -99,7 +104,7 @@ head(MEDIAN_stepsperday)
 hist(stepsperday$steps, main = "Total steps per day", col = "lightblue", xlab = "Steps Taken in Day", ylab = "Number of Days Occurred")
 ```
 
-![](RepRes_files/figure-markdown_github/unnamed-chunk-3-1.png)
+![](RepRes_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-3-1.png)
 
 What is the average daily activity pattern?
 ===========================================
@@ -123,7 +128,7 @@ TimeSeriesplot <- ggplot(MEAN_stepsper_5_mins, aes(Interval,Mean_Steps)) + geom_
 TimeSeriesplot
 ```
 
-![](RepRes_files/figure-markdown_github/unnamed-chunk-4-1.png)
+![](RepRes_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-4-1.png)
 
 ``` r
 # Find 5 min interval that contains max value
@@ -176,7 +181,7 @@ stepsperday3 <- aggregate(steps~date, data3,sum)
 hist(stepsperday3$steps, main = "Total steps per day", col = "lightgreen", xlab = "Steps Taken in Day", ylab = "Number of Days Occurred")
 ```
 
-![](RepRes_files/figure-markdown_github/unnamed-chunk-5-1.png)
+![](RepRes_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-5-1.png)
 
 ``` r
 #Report Mean and Median of imputed data
@@ -243,7 +248,7 @@ TimeSeriesplot2 <- ggplot(MEAN_stepsperday4, aes(interval,mean_steps)) + geom_li
 TimeSeriesplot2
 ```
 
-![](RepRes_files/figure-markdown_github/unnamed-chunk-6-1.png)
+![](RepRes_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-6-1.png)
 
 ``` r
 #For some reason I could not get this to plot the data although the graph was created
